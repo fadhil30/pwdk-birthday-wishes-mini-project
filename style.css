@@ -1,0 +1,51 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #11998e;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #11998e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0f8b81;
+}
+
+#wish-message {
+  font-size: 1.2em;
+  color: #555;
+}
+
+img.birthday {
+  max-height: 15vh;
+}
