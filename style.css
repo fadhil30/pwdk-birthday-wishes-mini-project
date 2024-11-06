@@ -46,6 +46,32 @@ button:hover {
   color: #555;
 }
 
+/* Tambahan di style.css */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#wish-message {
+  font-size: 1.2em;
+  color: #555;
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#wish-message.active {
+  animation: fadeIn 1s ease forwards;
+  opacity: 1; 
+  transform: translateY(0);
+}
+
 img.birthday {
-  max-height: 25vh;
+  max-height: 30vh;
 }
