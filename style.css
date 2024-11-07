@@ -34,7 +34,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 button:hover {
@@ -61,15 +61,30 @@ button:hover {
 
 #wish-message {
   font-size: 1.2em;
+  font-weight: bold;
   color: #555;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
+  height: 0;
 }
 
 #wish-message.active {
   animation: fadeIn 1s ease forwards;
-  opacity: 1; 
+  opacity: 1;
   transform: translateY(0);
+  height: fit-content;
+}
+
+#wish-opening {
+  color: #555;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#wish-opening.inactive {
+  display: none;
 }
 
 img.birthday {
